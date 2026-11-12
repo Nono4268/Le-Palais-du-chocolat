@@ -1,156 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Palais du Chocolat</title>
+
+    
+
+    <!-- la liaison entre le css et le html -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- section du header la num 1 -->
-    <header class="header">
-        <img src="images/logo-chocolat-1.png" alt="">
-
-        <h1>Palais du Chocolat</h1>
+    <!-- Section 1 la partie en tête et la navigation -->
+    <header class="header flex between align-center">
+        <div class="logo">
+            <img src="images/logo-chocolat-1.png" alt="Logo Palais du Chocolat">
         </div>
-        <nav class="nav">
-            <a href="#">Accueil</a>
-            <a href="#">Nos Produits</a>
-            <a href="#">Nos Services</a>
-            <a href="#">Avis</a>
-        </nav>
-        <a href="#">Devis gratuit</a>
 
+        <!-- liste non ordonnée <ul> -->
+        <nav class="nav">
+            <ul class="flex align-center">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Nos Produits</a></li>
+                <li><a href="#">Nos Services</a></li>
+                <li><a href="#">Avis</a></li>
+            </ul>
+        </nav>
+
+        <a href="#" class="lien-contact">Contact</a>
     </header>
 
-    <!-- la section du hero -->
+    <!-- la section 2 la bannière Hero -->
     <section class="hero">
-        <div class="hero-texte">
-            <h2>Palais du Chocolat</h2>
-            <p>Le chocolat qui éveille vos papilles</p>
-            <button class="btn-devis">Devis gratuit</button>
-            <button class="btn-catalogue">Voir le catalogue</button>
-            <img src="images/pexels-shivam-31462802.jpg" alt="">
-
-        </div>
-        <div class="hero-image">
+        <div class="hero-conteneur">
+            <div class="hero-texte">
+                <!-- Titre de niveau 1 le plus important de la page (Cours HTML) -->
+                <h1>Palais du Chocolat</h1>
+                <p>Le chocolat qui éveille vos papilles</p>
+                <div class="hero-liens flex gap-16">
+                    <a href="#" class="lien-hero">Devis gratuit</a>
+                    <a href="#" class="lien-hero">Voir le catalogue</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- la 3e section pourquoi nous choisir? -->
+    <!-- Section 3 : Pourquoi nous choisir -->
     <section class="choisir">
-        <h3>Pourquoi nous choisir ?</h3>
-        <div class="grille-choisir">
-            <div class="carte-choisir"><span class="icone"></span><strong>Artisanat</strong>
+        <h2>Pourquoi nous choisir ?</h2>
+        <div class="grille-choisir flex between gap-16">
+            <div class="carte-choisir">
+                <strong>Artisanat</strong>
                 <p>Qualité supérieure</p>
             </div>
-            <div class="carte-choisir"><span class="icone"></span><strong>Saveurs</strong>
+            <div class="carte-choisir">
+                <strong>Saveurs</strong>
                 <p>Créations uniques</p>
             </div>
-            <div class="carte-choisir"><span class="icone"></span><strong>Éthique</strong>
+            <div class="carte-choisir">
+                <strong>Éthique</strong>
                 <p>Cacao responsable</p>
             </div>
-            <div class="carte-choisir"><span class="icone"></span><strong>Passion</strong>
+            <div class="carte-choisir">
+                <strong>Passion</strong>
                 <p>Savoir-faire pur</p>
             </div>
         </div>
     </section>
-    5
-    <!-- 4eme secrtion des prestations -->
+
+    <!-- Section 4 : Prestations & Services -->
     <section class="prestations">
-        <h3>Nos Prestations & Services</h3>
-        <div class="grille-cartes">
+        <h2>Nos Prestations & Services</h2>
+        <div class="grille-cartes flex between">
             <div class="carte">
-                <div>
-                    <img src="images/chocolats-artisanaux-pexels-linken-van-zyl-263454378-18958634.jpg" alt="">
-                </div>
-                <h4>Chocolats artisanaux</h4>
-                <p>Découvrez notre sélection de chocolats faits à la main, alliant tradition et
-                    créativité pour des saveurs uniques.</p>
+                <img src="images/chocolats-artisanaux-pexels-linken-van-zyl-263454378-18958634.jpg" alt="Chocolats artisanaux">
+                <h3>Chocolats artisanaux</h3>
+                <p>Découvrez notre sélection de chocolats faits à la main, alliant tradition et créativité pour des saveurs uniques.</p>
             </div>
             <div class="carte">
-
-                <img src="images/atelier-degustation-pexels-jonathanborba-34357862.jpg" alt="">
-
-                <h4>Ateliers de dégustation</h4>
-                <p>Description: Participez à nos ateliers pour apprendre à déguster le chocolat comme un
-                    expert, en explorant ses arômes et ses textures.</p>
+                <img src="images/atelier-degustation-pexels-jonathanborba-34357862.jpg" alt="Atelier dégustation">
+                <h3>Ateliers de dégustation</h3>
+                <p>Participez à nos ateliers pour apprendre à déguster le chocolat comme un expert, en explorant ses arômes et ses textures.</p>
             </div>
             <div class="carte">
-                <img src="images/cadeaux-personnalises-pexels-soufianlafnesh-36914973.jpg" alt="">
-                <h4>Cadeaux personnalisés</h4>
-                <p>Offrez des cadeaux gourmands avec nos coffrets de chocolats
-                    personnalisés, parfaits pour toutes les occasions.</p>
+                <img src="images/cadeaux-personnalises-pexels-soufianlafnesh-36914973.jpg" alt="Coffret cadeau">
+                <h3>Cadeaux personnalisés</h3>
+                <p>Offrez des cadeaux gourmands avec nos coffrets de chocolats personnalisés, parfaits pour toutes les occasions.</p>
             </div>
         </div>
     </section>
 
-    <!-- 5eme section creations -->
+    <!-- la section 5 les creations -->
     <section class="creations">
-        <h3>Nos Créations Gourmandes</h3>
-        <div class="grille-cartes">
+        <h2>Nos Créations Gourmandes</h2>
+        <div class="grille-cartes flex-creations flex between">
             <div class="carte">
-                <img src="images/praline-croustillant-pexels-seurafrancis99-37439237.jpg" alt="">
-                <h4>Praliné croustillant</h4>
+                <img src="images/praline-croustillant-pexels-seurafrancis99-37439237.jpg" alt="Praliné">
+                <h3>Praliné croustillant</h3>
                 <p>Un équilibre parfait entre fondant et croustillant.</p>
             </div>
             <div class="carte">
-                <img src="images/truffe-champagne-pexels-planka-31325599.jpg" alt="">
-                <h4>Truffe au champagne</h4>
+                <img src="images/truffe-champagne-pexels-planka-31325599.jpg" alt="Truffes">
+                <h3>Truffe au champagne</h3>
                 <p>L'élégance du chocolat alliée aux bulles festives.</p>
             </div>
             <div class="carte">
-                <img src="images/tablette-chocolat-noir-pexels-alleksana-4113333.jpg" alt="">
-                <h4>Tablette noir 70%</h4>
+                <img src="images/tablette-chocolat-noir-pexels-alleksana-4113333.jpg" alt="Tablette de chocolat">
+                <h3>Tablette noir 70%</h3>
                 <p>La puissance brute d'un grand cru sélectionné.</p>
+            </div>
+            <div class="carte">
+                <img src="images/coffret-chocolats-assortis-pexels-anthony-rahayel-125801377-38444667.jpg" alt="Coffret de chocolats assortis">
+                <h3>Coffret de chocolats assortis</h3>
+                <p>Un assortiment de chocolats fins, sélectionnés avec soin par nos chocolatiers.</p>
+            </div>
+            <div class="carte">
+                <img src="images/chocolat-chaud-pexels-leeloothefirst-5264675.jpg" alt="Chocolat chaud">
+                <h3>Chocolat chaud</h3>
+                <p>Un chocolat chaud onctueux et réconfortant, à déguster en toute occasion.</p>
+            </div>
+            <div class="carte">
+                <img src="images/mendiants-pexels-pinklime-foody-169881302-11074275.jpg" alt="Mendiants">
+                <h3>Mendiants</h3>
+                <p>Des chocolats aux fruits secs et fruits confits, pour une explosion de saveurs en bouche.</p>
             </div>
         </div>
     </section>
 
-    <!-- SIX SECTION LES AVIS CLIENTS -->
+    <!-- Section 6 les avis des clients -->
     <section class="avis">
-        <h3>Ce que disent nos gourmands</h3>
-        <div class="grille-cartes">
+        <h2>Ce que disent nos gourmands</h2>
+        <div class="grille-cartes flex between">
             <div class="carte-avis">
-                <strong>Sophie <small>(Coffret personnalisé)</small></strong>
-                <p>"Une merveille absolue, mes invités ont adoré !"</p>
+                <strong>Sophie (Coffret personnalisé)</strong>
+                <!-- balise <em> pour la description des avis -->
+                <p><em>"Une merveille absolue, mes invités ont adoré !"</em></p>
                 <div class="etoiles">★★★★★ (5/5)</div>
             </div>
             <div class="carte-avis">
-                <strong>Antoine<small>(Mariage)</small></strong>
-                <p>"Prestation parfaite et chocolats d'une finesse incroyable."</p>
+                <strong>Antoine (Mariage)</strong>
+                <p><em>"Prestation parfaite et chocolats d'une finesse incroyable."</em></p>
                 <div class="etoiles">★★★★★ (5/5)</div>
             </div>
-            <div class="carte-avis"></div>
-            <strong>Nicolas <small>(Achat boutique)</small></strong>
-            <p>"Très bon accueil et le praliné est à tomber par terre."</p>
-            <div class="etoiles">★★★★☆ (4/5)</div>
+            <div class="carte-avis">
+                <strong>Nicolas (Achat boutique)</strong>
+                <p><em>"Très bon accueil et le praliné est à tomber par terre."</em></p>
+                <div class="etoiles">★★★★☆ (4/5)</div>
+            </div>
+        </div>
+    </section>
 
-            <!-- la sept section du footer -->
-            <footer class="footer">
-                <div class="footer-gauche">
-                    <h3>Palais du Chocolat</h3>
-                    <p>Le raffinement du cacao au service de vos émotions.</p>
-
-                    <h4>Réseaux</h4>
-                    <a href="#">Instagram</a>
-                    <a href="#">Facebook</a>
-                </div>
-                    <ul>
-                        <li>Accueil</li>
-                        <li>Produits</li>
-                        <li>services</li>
-                    </ul>
-
-                     <ul>
-                        <li>LEGAL</li>
-                        <li>CGV</li>
-                    </ul>
-
-            </footer>
-
+    <!-- la section 7 le pied de page footer -->
+    <footer class="footer flex between align-center">
+        <div class="footer-gauche">
+            <h3>Palais du Chocolat</h3>
+            <p>Le raffinement du cacao au service de vos émotions.</p>
+        </div>
+        <div class="footer-colonnes flex">
+            <div class="colonne">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Produits</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+            <div class="colonne">
+                <h4>Légal</h4>
+                <ul>
+                    <li><a href="#">Mentions Légales</a></li>
+                    <li><a href="#">CGV</a></li>
+                </ul>
+            </div>
+            <div class="colonne">
+                <h4>Réseaux</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
