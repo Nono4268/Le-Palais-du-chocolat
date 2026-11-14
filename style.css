@@ -1,5 +1,242 @@
- *{
+/* marges reinitialisés à O */
+* {
     margin: 0;
-padding: 0;
-box-sizing: border box;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/* Mise en page du site en général */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    background-color: #F8F1E8;
+    color: #2E2A26;
+}
+
+/* Police des titres */
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* adaptation de l'affichage sur plusieurs configurations(ordi, tablette, téléphone) */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Suppression du soulignement et de la couleur bleue des liens */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Soulignement des liens au survol de la souris */
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Suppression des puces sur les listes */
+ul {
+    list-style: none;
+}
+
+/* Centrage automatique de la page */
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Rangement des éléments en ligne */
+
+.flex {
+    display: flex;
+}
+
+/* Rangement des éléments en colonne */
+
+.colonne {
+    flex-direction: column;
+}
+
+/* Retour à la ligne automatique des éléments */
+.wrap {
+    flex-wrap: wrap;
+}
+
+/* Espacement maximal entre les éléments */
+.between {
+    justify-content: space-between;
+}
+
+/* Espacement égal autour de chaque élément */
+
+.around {
+    justify-content: space-around;
+}
+
+/* Centrage horizontal des éléments */
+.center {
+    justify-content: center;
+}
+
+/* Centrage vertical des éléments */
+.align-center {
+    align-items: center;
+}
+
+/* Largeur fixée à 23 % POUR 3-4 colonnes */
+
+.large23 {
+    width: 23%;
+}
+
+/* Largeur de 31 % (un tiers, donc bien pour 3 colonnes) */
+
+.w-33 {
+    width: 31%;
+}
+
+/* Largeur de 45 % (presque la moitié, bien pour 2 colonnes) */
+.w-50 {
+    width: 45%;
+}
+
+/* Largeur de 100 % ca occupe toute la largeur dispo */
+.w-100 {
+    width: 100%;
+}
+
+/* Espacements  */
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-40 {
+    gap: 40px;
+}
+
+/* marges */
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+/* espaces intérieurs */
+
+.p-20 {
+    padding: 20px;
+}
+
+.p-40 {
+    padding: 40px;
+}
+
+/* Textes, images et boutons */
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: #FFFFFF;
+}
+
+.text-accent {
+    color: #D8935C;
+}
+/* MISE EN GRAS */
+
+.bold {
+    font-weight: bold;
+}
+/* MISE EN ITALIQUE */
+
+.italic {
+    font-style: italic;
+}
+/* Arrondir les coins  */
+
+.arrondi {
+    border-radius: 16px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #D8935C;
+    color: #FFFFFF;
+    border-radius: 60px;
+}
+
+.btn:hover {
+    text-decoration: none;
+}
+/* Homogénéité des images*/
+.project-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+/* Logo agrandi et aligné avec le titre */
+.logo {
+    height: 75px;
+    width: auto;
+}
+
+/* Couleurs de fond et bannière chocolat fondu */
+.bg-dark {
+    background-color: #6B3E2E;
+}
+
+.bg-light {
+    background-color: #EAD8C3;
+}
+
+.bg-white {
+    background-color: #FFFFFF;
+}
+/*banniere d'accueil*/
+.hero {
+    min-height: 450px;
+    background-image: url("images/hero-chocolat-fondu.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Adaptation tablette et mobile */
+
+@media all and (max-width: 800px) {
+    .medium48 {
+        width: 48%;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .small100 {
+        width: 100%;
+    }
+    }

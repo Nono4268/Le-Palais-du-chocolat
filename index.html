@@ -1,188 +1,256 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="fr"> <!--taper "fr" pour faire un site en francais ou "en" pour anglais-->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">  <!--affichage des accents-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--adaptation mobile-->
     <title>Palais du Chocolat</title>
 
-    
-
-    <!-- la liaison entre le css et le html -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!--lier le html et le css ensemble-->
 </head>
-
 <body>
-    <!-- Section 1 la partie en tête et la navigation -->
-    <header class="header flex between align-center">
-        <div class="logo">
-            <img src="images/logo-chocolat-1.png" alt="Logo Palais du Chocolat">
-        </div>
+  
+    <!--header-->
 
-        <!-- liste non ordonnée <ul> -->
-        <nav class="nav">
-            <ul class="flex align-center">
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Nos Produits</a></li>
-                <li><a href="#">Nos Services</a></li>
-                <li><a href="#">Avis</a></li>
-            </ul>
-        </nav>
+<header class="container flex between align-center p-20"> 
+<a href="#"><img src="images/logo-chocolat-1.png"alt="Logo Le Palais du Chocolat" class="logo"></a>
 
-        <a href="#" class="lien-contact">Contact</a>
-    </header>
+<nav>
+    <ul class="flex gap-40"> 
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Nos Créations</a></li>
+        <li><a href="#">Nos Prestations</a></li>
+        <li><a href="#">Témoignages</a></li>
+    </ul>
+</nav>
+<a href="#">Contact</a>
+</header>
+<main>              
 
-    <!-- la section 2 la bannière Hero -->
-    <section class="hero">
-        <div class="hero-conteneur">
-            <div class="hero-texte">
-                <!-- Titre de niveau 1 le plus important de la page (Cours HTML) -->
-                <h1>Palais du Chocolat</h1>
-                <p>Le chocolat qui éveille vos papilles</p>
-                <div class="hero-liens flex gap-16">
-                    <a href="#" class="lien-hero">Devis gratuit</a>
-                    <a href="#" class="lien-hero">Voir le catalogue</a>
+<!--section 2 hero--> 
+   
+<section class="hero flex align-center text-white">
+<div class="container w-100 p-20">
+<div class="w-50 small100"> 
+
+    <h1>Palais du Chocolat</h1>
+     <p class="mt-20">Le chocolat qui éveille vos papilles</p>
+<div class="flex align-center gap-40 mt-20">              
+<a href="#">Devis gratuit</a>
+<a href="#">Voir le catalogue</a>
+</div>
+       </div>
+      </div>
+</section>  
+                        
+    <!--3 NOS engagements-->                
+
+<section class="bg-light p-40 mt-80">
+<div class="container"> 
+         <h2 class="text-center">Nos Engagements</h2>   
+<div class="flex wrap between gap-20 mt-40">  
+ <div class="large23 medium48 small100 bg-white p-20 arrondi text-center">     
+    
+<h3>Qualité supérieure</h3>
+<p class="mt-10">• Des chocolats artisanaux de qualité supérieure, réalisés à partir d'ingrédients sélectionnés avec
+soin</p>
+ </div>                      
+ <div class="large23 medium48 small100 bg-white p-20 arrondi text-center">     
+
+    <h3>Saveurs uniques</h3>
+<p class="mt-10">• Des saveurs uniques et originales, pour des sensations gustatives incomparables</p>
+ </div>
+      <div class="large23 medium48 small100 bg-white p-20 arrondi text-center">     
+             
+    <h3>Présentation soignée</h3>
+<p class="mt-10">• Une attention particulière portée à la présentation des chocolats, pour des cadeaux gourmands
+inoubliables</p>
+      </div>
+      <div class="large23 medium48 small100 bg-white p-20 arrondi text-center">     
+
+             <h3>Service personnalisé</h3>
+                <p class="mt-10">• Un service personnalisé et attentionné, pour répondre à toutes vos demandes et envies</p>
+                  </div>
+                 </div>
+                    </div> 
+                 
+</section>
+     <!--section 4 NOS PRESTATIONS ET SERVICES-->  
+
+<section class="container mt-80 p-20"> 
+<h2 class="text-center">Nos Prestations & Services</h2>
+<div class="flex wrap between gap-20 mt-40">  
+<div class="w-33 medium48 small100 bg-white p-20 arrondi">  
+<img src="images/chocolats-artisanaux-pexels-linken-van-zyl-263454378-18958634.jpg" alt="Chocolats artisanaux" class="project-img">
+            
+<h3 class="mt-20">Chocolats artisanaux</h3>
+<p class="mt-10">Découvrez notre sélection de chocolats faits à la main, alliant tradition et
+créativité pour des saveurs uniques.</p>
+</div>             
+
+<div class="w-33 medium48 small100 bg-white p-20 arrondi">  
+<img src="images/atelier-degustation-pexels-jonathanborba-34357862.jpg" alt="Ateliers de dégustation" class="project-img">
+
+<h3 class="mt-20">Ateliers de dégustation</h3>
+<p class="mt-10">Participez à nos ateliers pour apprendre à déguster le chocolat comme un
+expert, en explorant ses arômes et ses textures.</p>
+</div>
+<div class="w-33 medium48 small100 bg-white p-20 arrondi">  
+<img src="images/cadeaux-personnalises-pexels-soufianlafnesh-36914973.jpg" alt="Cadeaux personnalisés" class="project-img">
+  <h3 class="mt-20">Cadeaux personnalisés</h3>                  
+  <p class="mt-10">Offrez des cadeaux gourmands avec nos coffrets de chocolats
+personnalisés, parfaits pour toutes les occasions.</p>         
+</div>
+
+   </div>                 
+</section>         
+            
+         <!--section 5 les creations gourmandes 3 blocs x 2-->
+
+         <section class="bg-light p-40 mt-80">   
+ <div class="container">            
+          
+      <h2 class="text-center">Nos Créations Gourmandes</h2> 
+ <div class="flex wrap between gap-20 mt-40">
+
+    <!--Creation 1-->
+ <div class="w-33 medium48 small100 bg-white p-20 arrondi">
+<img src="images/praline-croustillant-pexels-seurafrancis99-37439237.jpg" alt="Praliné croustillant" class="project-img">
+    <h3 class="mt-20">Praliné croustillant</h3>                     
+<p class="mt-10">Une ganache fondante au praliné, agrémentée d'éclats de noisettes
+croustillants. Un véritable délice pour les amateurs de chocolat et de fruits
+secs.</p>              
+ </div>               
+                     
+  <!--Creation 2-->
+ <div class="w-33 medium48 small100 bg-white p-20 arrondi">
+<img src="images/truffe-champagne-pexels-planka-31325599.jpg" alt="Truffe au champagne" class="project-img">
+    <h3 class="mt-20">Truffe au champagne</h3>                     
+<p class="mt-10">Une ganache onctueuse et légèrement pétillante, enrobée de chocolat noir.
+Une saveur subtile et délicate, idéale pour les fêtes et les célébrations.</p>              
+ </div>   
+
+         <!--Creation 3-->
+ <div class="w-33 medium48 small100 bg-white p-20 arrondi">
+<img src="images/tablette-chocolat-noir-pexels-alleksana-4113333.jpg" alt="Tablette de chocolat noir 70%" class="project-img">
+    <h3 class="mt-20">Tablette de chocolat noir 70%</h3>                     
+<p class="mt-10">Un chocolat noir intense et puissant, aux notes de cacao amer et de fruits
+secs. Un grand classique de la chocolaterie, à déguster seul ou à utiliser en
+cuisine.</p>              
+ </div>               
+                       
+<!--Creation 4-->
+ <div class="w-33 medium48 small100 bg-white p-20 arrondi">
+<img src="images/coffret-chocolats-assortis-pexels-anthony-rahayel-125801377-38444667.jpg" alt="Coffret de chocolats assortis" class="project-img">
+    <h3 class="mt-20">Coffret de chocolats assortis</h3>                     
+<p class="mt-10">Un assortiment de chocolats fins, sélectionnés avec soin par nos
+chocolatiers. Un cadeau gourmand et raffiné, qui fera plaisir à coup sûr.</p>              
+ </div>       
+                   
+ <!--Creation 5-->
+ <div class="w-33 medium48 small100 bg-white p-20 arrondi">
+<img src="images/chocolat-chaud-pexels-leeloothefirst-5264675.jpg" alt="Chocolat chaud" class="project-img">
+    <h3 class="mt-20">Chocolat chaud</h3>                     
+<p class="mt-10">Un chocolat chaud onctueux et réconfortant, à déguster en toute occasion.</p>              
+ </div>   
+
+   <!--Creation 6-->
+ <div class="w-33 medium48 small100 bg-white p-20 arrondi">
+<img src="images/mendiants-pexels-pinklime-foody-169881302-11074275.jpg" alt="Mendiants" class="project-img">
+    <h3 class="mt-20">Mendiants</h3>                     
+<p class="mt-10">Des chocolats aux fruits secs et fruits confits, pour une explosion de
+saveurs en bouche.</p>              
+ </div>       
+ </div>
+ </div>
+              
+         </section>
+            
+            
+        <!--section 6 LES temoignages des clients-->
+<section class="container mt-80 p-20">  
+<h2 class="text-center">Témoignages Clients</h2>
+<div class="flex wrap between gap-20 mt-40"> 
+
+    <!--avis de sophie-->
+
+<div class="w-33 medium48 small100 bg-white p-20 arrondi">
+<h3>Sophie <span class="italic">(Coffret cadeau personnalisé)</span></h3>
+<p class="mt-20">"Le coffret de chocolats que j'ai offert était magnifique et délicieux. Les
+saveurs étaient variées et originales, et la présentation était très soignée.
+Un grand merci au Palais du Chocolat pour ce cadeau parfait."</p>
+<p class="mt-10 bold text-accent">★★★★★ (5/5)</p>
+ </div>                   
+      
+ <!--avis de antoine-->
+
+<div class="w-33 medium48 small100 bg-white p-20 arrondi">
+<h3>Antoine <span class="italic">(Mariage)</span></h3>
+<br>
+<p class="mt-20">"Les chocolats du Palais du Chocolat ont été un véritable succès lors de
+notre mariage. Tout le monde a adoré les saveurs raffinées et les
+présentations élégantes. Un grand bravo à toute l'équipe."</p>
+<p class="mt-10 bold text-accent">★★★★★ (5/5)</p>
+ </div>    
+ 
+ <!--avis de Nicolas-->
+
+ <div class="w-33 medium48 small100 bg-white p-20 arrondi">
+<h3>Nicolas <span class="italic">(Achat en boutique)</span></h3>
+<br>
+<p class="mt-20">"J'ai acheté une tablette de chocolat noir au Palais du Chocolat et je n'ai
+pas été déçu. <br> Le chocolat était intense et puissant, avec des notes subtiles
+de fruits secs. Un vrai régal pour les papilles."</p>
+
+<p class="mt-10 bold text-accent">★★★★ (4/5)</p>
+ </div>    
+
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Section 3 : Pourquoi nous choisir -->
-    <section class="choisir">
-        <h2>Pourquoi nous choisir ?</h2>
-        <div class="grille-choisir flex between gap-16">
-            <div class="carte-choisir">
-                <strong>Artisanat</strong>
-                <p>Qualité supérieure</p>
-            </div>
-            <div class="carte-choisir">
-                <strong>Saveurs</strong>
-                <p>Créations uniques</p>
-            </div>
-            <div class="carte-choisir">
-                <strong>Éthique</strong>
-                <p>Cacao responsable</p>
-            </div>
-            <div class="carte-choisir">
-                <strong>Passion</strong>
-                <p>Savoir-faire pur</p>
-            </div>
-        </div>
-    </section>
+<!--section 7 LE FOOTER-->
 
-    <!-- Section 4 : Prestations & Services -->
-    <section class="prestations">
-        <h2>Nos Prestations & Services</h2>
-        <div class="grille-cartes flex between">
-            <div class="carte">
-                <img src="images/chocolats-artisanaux-pexels-linken-van-zyl-263454378-18958634.jpg" alt="Chocolats artisanaux">
-                <h3>Chocolats artisanaux</h3>
-                <p>Découvrez notre sélection de chocolats faits à la main, alliant tradition et créativité pour des saveurs uniques.</p>
-            </div>
-            <div class="carte">
-                <img src="images/atelier-degustation-pexels-jonathanborba-34357862.jpg" alt="Atelier dégustation">
-                <h3>Ateliers de dégustation</h3>
-                <p>Participez à nos ateliers pour apprendre à déguster le chocolat comme un expert, en explorant ses arômes et ses textures.</p>
-            </div>
-            <div class="carte">
-                <img src="images/cadeaux-personnalises-pexels-soufianlafnesh-36914973.jpg" alt="Coffret cadeau">
-                <h3>Cadeaux personnalisés</h3>
-                <p>Offrez des cadeaux gourmands avec nos coffrets de chocolats personnalisés, parfaits pour toutes les occasions.</p>
-            </div>
-        </div>
-    </section>
+<footer class="bg-dark text-white mt-80 p-40">
+<div class="container flex wrap between gap-40">  
+<div class="w-33 small100">  
+   
+<h3 class="text-white">Palais du Chocolat</h3>
+<p class="mt-10">Le savoir-faire chocolatier, de génération en génération.</p>
+</div>
 
-    <!-- la section 5 les creations -->
-    <section class="creations">
-        <h2>Nos Créations Gourmandes</h2>
-        <div class="grille-cartes flex-creations flex between">
-            <div class="carte">
-                <img src="images/praline-croustillant-pexels-seurafrancis99-37439237.jpg" alt="Praliné">
-                <h3>Praliné croustillant</h3>
-                <p>Un équilibre parfait entre fondant et croustillant.</p>
-            </div>
-            <div class="carte">
-                <img src="images/truffe-champagne-pexels-planka-31325599.jpg" alt="Truffes">
-                <h3>Truffe au champagne</h3>
-                <p>L'élégance du chocolat alliée aux bulles festives.</p>
-            </div>
-            <div class="carte">
-                <img src="images/tablette-chocolat-noir-pexels-alleksana-4113333.jpg" alt="Tablette de chocolat">
-                <h3>Tablette noir 70%</h3>
-                <p>La puissance brute d'un grand cru sélectionné.</p>
-            </div>
-            <div class="carte">
-                <img src="images/coffret-chocolats-assortis-pexels-anthony-rahayel-125801377-38444667.jpg" alt="Coffret de chocolats assortis">
-                <h3>Coffret de chocolats assortis</h3>
-                <p>Un assortiment de chocolats fins, sélectionnés avec soin par nos chocolatiers.</p>
-            </div>
-            <div class="carte">
-                <img src="images/chocolat-chaud-pexels-leeloothefirst-5264675.jpg" alt="Chocolat chaud">
-                <h3>Chocolat chaud</h3>
-                <p>Un chocolat chaud onctueux et réconfortant, à déguster en toute occasion.</p>
-            </div>
-            <div class="carte">
-                <img src="images/mendiants-pexels-pinklime-foody-169881302-11074275.jpg" alt="Mendiants">
-                <h3>Mendiants</h3>
-                <p>Des chocolats aux fruits secs et fruits confits, pour une explosion de saveurs en bouche.</p>
-            </div>
-        </div>
-    </section>
+<div>
+           
+ <h3 class="text-white">Navigation</h3>   
+<ul class="mt-10">  
+ <li><a href="#">Accueil</a></li>   
+ <li><a href="#">Nos Créations</a></li>   
+ <li><a href="#">Nos Prestations</a></li>   
+ <li><a href="#">Témoignages</a></li>   
+ <li><a href="#">Contact</a></li>   
+</ul>
 
-    <!-- Section 6 les avis des clients -->
-    <section class="avis">
-        <h2>Ce que disent nos gourmands</h2>
-        <div class="grille-cartes flex between">
-            <div class="carte-avis">
-                <strong>Sophie (Coffret personnalisé)</strong>
-                <!-- balise <em> pour la description des avis -->
-                <p><em>"Une merveille absolue, mes invités ont adoré !"</em></p>
-                <div class="etoiles">★★★★★ (5/5)</div>
-            </div>
-            <div class="carte-avis">
-                <strong>Antoine (Mariage)</strong>
-                <p><em>"Prestation parfaite et chocolats d'une finesse incroyable."</em></p>
-                <div class="etoiles">★★★★★ (5/5)</div>
-            </div>
-            <div class="carte-avis">
-                <strong>Nicolas (Achat boutique)</strong>
-                <p><em>"Très bon accueil et le praliné est à tomber par terre."</em></p>
-                <div class="etoiles">★★★★☆ (4/5)</div>
-            </div>
-        </div>
-    </section>
+</div>            
+<div> 
+<h3 class="text-white">Légal</h3>   
+<ul class="mt-10">  
+ <li><a href="#">Mentions Légales</a></li>   
+ <li><a href="#">CGV</a></li> 
 
-    <!-- la section 7 le pied de page footer -->
-    <footer class="footer flex between align-center">
-        <div class="footer-gauche">
-            <h3>Palais du Chocolat</h3>
-            <p>Le raffinement du cacao au service de vos émotions.</p>
-        </div>
-        <div class="footer-colonnes flex">
-            <div class="colonne">
-                <h4>Navigation</h4>
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Produits</a></li>
-                    <li><a href="#">Services</a></li>
-                </ul>
-            </div>
-            <div class="colonne">
-                <h4>Légal</h4>
-                <ul>
-                    <li><a href="#">Mentions Légales</a></li>
-                    <li><a href="#">CGV</a></li>
-                </ul>
-            </div>
-            <div class="colonne">
-                <h4>Réseaux</h4>
-                <ul>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Facebook</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+</ul>
+</div>       
+        
+<div>
+    <h3 class="text-white">Réseaux sociaux</h3>   
+<ul class="mt-10">  
+ <li><a href="#">Instagram</a></li>   
+ <li><a href="#">Facebook</a></li>        
+    
+</ul>
+</div>
+</div>
+</footer>
+
 </body>
-
 </html>
+ 
